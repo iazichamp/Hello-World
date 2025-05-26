@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Click the Link...</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+            background-color: #111;
+            color: #fff;
+        }
+        #message {
+            display: none;
+            font-size: 24px;
+            color: #ff4444;
+            margin-top: 20px;
+        }
+        a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #d9534f;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px;
+            transition: background-color 0.3s;
+        }
+        a:hover {
+            background-color: #c9302c;
+        }
+    </style>
+</head>
+<body>
+    <h1>Click the Link Below 👇</h1>
+    <a href="#" onclick="showMessage()">Don't Click Me</a>
+    
+    <div id="message">
+        <h2>Hello, Dear... 💔</h2>
+        <p>You lost everything dear! ☠️</p>
+    </div>
+
+    <script>
+        function showMessage() {
+            document.getElementById("message").style.display = "block";
+            return false; // Prevents the link from navigating
+        }
+    </script>
+</body>
+</html>
